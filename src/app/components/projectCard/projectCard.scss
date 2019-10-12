@@ -1,0 +1,43 @@
+@import "../../styles/theme";
+.project-card {
+  position: relative;
+  margin: 15px 0;
+  // background: #ffffff;
+  width: 100%;
+  text-align: center;
+  .project-detail {
+    display: none;
+    height: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .name {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-top: 15px;
+    margin: 0;
+    font-weight: 600;
+  }
+  .type {
+    font-size: 12px;
+  }
+}
+
+// TODO
+// .project-card:hover {
+//   .project-detail {
+//     transition: all 0.5s ease;
+//     position: absolute;
+//     display: block;
+//     left: 0;
+//     top :0;
+//     right: 0;
+//     border-radius: 10px;
+//     bottom: 0;
+//     background: var(--color-white);
+//     height: 100%;
+//   }
+// }

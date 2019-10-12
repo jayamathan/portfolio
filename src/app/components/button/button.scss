@@ -1,0 +1,96 @@
+@import "../../styles/theme";
+
+.button {
+  border-radius: 4px;
+  background-color: var(--color-z-black);
+  border: none;
+  color: var(--color-white);
+  text-align: center;
+  font-size: 16px;
+  padding: 8px 0;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  background: var(--color-pink);
+  color: var(--color-white);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.link-button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--color-z-black);
+  border: none;
+  color: var(--color-white);
+  text-align: center;
+  font-size: 16px;
+  padding: 8px 0;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+.link-button:hover,
+.link-button:focus,
+.link-button:active {
+  background: var(--color-pink);
+  color: var(--color-white);
+}
+
+.link-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.link-button span:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.link-button:hover span {
+  padding-right: 15px;
+}
+
+.link-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

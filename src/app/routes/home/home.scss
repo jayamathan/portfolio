@@ -1,0 +1,238 @@
+@import "../../styles/theme";
+
+.home {
+  background-image: url($bgImg2);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.landing {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.intro {
+  .greeting {
+    margin: 0;
+    font-size: 18px;
+  }
+  .name {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--color-z-black);
+    span {
+      transition: all 0.3s ease-in-out;
+      border-radius: 4px;
+      background: var(--color-white);
+      text-transform: uppercase;
+      color: var(--color-z-black);
+      padding: 5px;
+      font-weight: 900;
+    }
+    span:hover {
+      color: var(--color-z-black);
+      transition: all 0.3s ease-in-out;
+      background: transparent;
+    }
+  }
+  span {
+    text-transform: capitalize;
+    color: var(--color-grey);
+  }
+  .designation {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .location {
+    font-size: 14px;
+  }
+}
+
+.projects {
+  padding: 50px 100px;
+  .project-heading {
+    color: var(--color-white);
+  }
+  .project-heading::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: var(--color-orange);
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: -5px;
+  }
+  .list {
+    padding: 50px 100px;
+  }
+}
+
+// Testimonial
+.testimonial-quote {
+  font-size: 14px;
+  padding: 15px;
+  color: var(--color-white);
+  text-align: right;
+}
+
+.testimonial-quote blockquote {
+  /* Negate theme styles */
+  max-width: 400px;
+  margin: 20px;
+  background: none;
+  text-align: right;
+  color: var(--color-z-black);
+  // font-family: Georgia, serif;
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 1.4 !important;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  text-align: justify;
+  z-index: 0;
+}
+
+.testimonial-quote blockquote * {
+  box-sizing: border-box;
+}
+
+.testimonial-quote blockquote p {
+  color: var(--color-white);
+  line-height: 1.4 !important;
+}
+
+.testimonial-quote blockquote p:first-child:before {
+  content: "\201C";
+  color: var(--color-white);
+  font-size: 7.5em;
+  font-weight: 700;
+  opacity: 0.3;
+  position: absolute;
+  top: -0.4em;
+  left: -0.2em;
+  text-shadow: none;
+  z-index: -300;
+}
+
+.testimonial-quote img {
+  border: 3px solid #9cc1d3;
+  border-radius: 50%;
+  display: block;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -0.2em;
+  left: 0;
+}
+
+.testimonial-quote cite {
+  color: var(--color-orange);
+  display: block;
+  font-size: 0.8em;
+}
+
+.testimonial-quote cite span {
+  color: var(--color-white);
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  // text-shadow: 0 1px white;
+}
+
+.testimonial-quote {
+  position: relative;
+  left: 10px;
+  right: 10px;
+}
+
+.testimonial-quote .quote-container {
+  // padding-left: 160px;
+}
+
+.testimonial-quote.right .quote-container {
+  padding-left: 0;
+  // padding-right: 160px;
+}
+
+.testimonial-quote.right img {
+  left: auto;
+  right: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home {
+    background-image: none;
+    .landing {
+      background-color: var(--color-white);
+      height: auto;
+    }
+    .intro {
+      margin: 150px 0px 50px 0;
+      color: var(--color-z-black);
+      .name {
+        font-size: 34px;
+      }
+    }
+  }
+
+  .testimonial-quote {
+    color: var(--color-z-black);
+    text-align: left;
+    padding: 100px 15px 100px 0;
+    blockquote p {
+      color: var(--color-z-black) !important;
+    }
+    blockquote p:first-child:before {
+      color: var(--color-z-black);
+    }
+    cite span {
+      color: var(--color-z-black);
+    }
+  }
+
+  .projects {
+    // background-image: linear-gradient(to bottom,var(--color-blue) , var(--color-white));
+    background: var(--color-pink); /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to top,
+      var(--color-white),
+      var(--color-pink)
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to top,
+      var(--color-white),
+      var(--color-pink)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0;
+    padding: 0;
+    .list {
+      padding: 0;
+      padding: 0;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

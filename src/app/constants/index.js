@@ -1,4 +1,4 @@
-simport {
+import {
   ANGULAR,
   CSS3,
   HTML5,

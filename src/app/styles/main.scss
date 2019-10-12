@@ -1,0 +1,99 @@
+@import "bootstrap";
+@import "theme";
+
+@font-face {
+  font-family: "chiller", sans-serif;
+  src: url("../assets/fonts/CHILLER.TTF");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+input,
+input:focus,
+input:active,
+textarea,
+textarea:focus,
+textarea:active,
+button,
+button:focus,
+button:active {
+  outline: none !important;
+}
+
+.content {
+  min-height: calc(100vh - 80px);
+}
+
+.btn {
+  margin: 5px;
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+// Scrollbar = = =
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-z-black);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-z-black);
+}
+
+// Text Selection  = = =
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--color-white);
+  background: var(--color-pink);
+}
+
+::selection {
+  color: var(--color-white);
+  background: var(--color-pink);
+}
+
+@media only screen and (max-width: 600px) {
+  // Scrollbar = = =
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px !important;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--color-grey);
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-z-black);
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-z-black);
+  }
+}

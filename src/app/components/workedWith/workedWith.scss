@@ -1,0 +1,39 @@
+@import "../../styles/theme";
+
+.workedWith {
+  padding: 50px 0;
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    img {
+      transition: all 0.3s ease;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      height: auto;
+      width: 150px;
+      margin: 10px;
+    }
+    img:hover {
+      transition: all 0.3s ease;
+      -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .workedWith {
+    .list {
+      justify-content: flex-start;
+      flex-flow: nowrap;
+      overflow-x: scroll;
+      img {
+        transition: all 0.3s ease;
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../styles/theme";
+
+// Heading
+.heading {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  span {
+    color: var(--color-pink);
+    font-size: 50px !important;
+  }
+}
+
+.page-heading {
+  color: var(--color-z-black);
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  span {
+    color: var(--color-pink);
+    font-size: 70px;
+  }
+}

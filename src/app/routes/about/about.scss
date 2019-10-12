@@ -1,0 +1,37 @@
+@import "../../styles/theme";
+
+.about {
+  padding-top: 56px;
+  background-image: url($bgImg1);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  .about-heading {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+  }
+  .about-content {
+    background: var(--color-white);
+    padding: 50px;
+    box-shadow: 0 5px 15px 0 rgba(239, 239, 239, 0.5);
+  }
+  .name {
+    color: var(--color-pink);
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    background-image: none;
+    background-color: var(--color-white);
+    .about-content {
+      padding: 50px 0;
+      background: transparent;
+      box-shadow: 0 0px 0px 0 rgba(239, 239, 239, 0.5);
+    }
+    // background-image: none;
+    // background-color: var(--color-blue);
+  }
+}

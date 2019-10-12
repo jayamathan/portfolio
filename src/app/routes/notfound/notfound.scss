@@ -1,0 +1,20 @@
+@import "../../styles/theme";
+
+.notfound {
+  background: var(--color-grey);
+  width: 100%;
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  h2 {
+    font-family: "chiller", sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
