@@ -1,16 +1,24 @@
 import React from "react";
 import { Row, Col, Container } from "../../components/layout";
-import {
-  PRO_DAUBLE as proDauble,
-  PRO_MEDZIN as proMedzin,
-  PRO_MM as proMM,
-  PRO_PIT as proPIT,
-  PRO_TT as proTT
-} from "../../assets/imgs";
+import youtube from "../../assets/imgs/youtube.PNG";
+import crown from "../../assets/imgs/crown.PNG";
+import monstersilk from "../../assets/imgs/monstersilk.png";
 import Heading from "../../components/heading";
 import ProjectCard from "../../components/projectCard";
-
+import Button from "../../components/button";
 const Projects = () => {
+  const click1 = () => {
+    window.open("http://crwn-store.herokuapp.com/", "_blank");
+  };
+  const click2 = () => {
+    window.open("https://monsters-and-silk.web.app/", "_blank");
+  };
+  const click3 = () => {
+    window.open("https://youtube-jm.netlify.com/", "_blank");
+  };
+  const click4 = () => {
+    window.open("https://github.com/jayamathan/V2-crwn-clothing", "_blank");
+  };
   return (
     <section className="projects">
       <Container>
@@ -23,34 +31,30 @@ const Projects = () => {
         </Row>
         <div className="list">
           <Row className="m-0">
-            <Col xs={12} sm={6} md={6} lg={6}>
+            <Col xs={12} sm={12} md={12} lg={12}>
               <ProjectCard
                 className="text-white"
-                name="PipeTrak IT"
-                type="Mobile App"
-                image={proPIT}
-              />
-            </Col>
-            <Col xs={12} sm={6} md={6} lg={6}>
-              <ProjectCard
-                className="text-white"
-                name="MuscleMatics"
-                type="Web App"
-                image={proMM}
+                name="Crown Store"
+                type="E-commerce"
+                image={crown}
+                onClick={click1}
               />
             </Col>
             <Col xs={12} sm={12} md={12} lg={12}>
               <ProjectCard
-                name="Terrain Travellers"
+                name="Monster & Silk"
                 type="Web App"
-                image={proTT}
+                image={monstersilk}
+                onClick={click2}
               />
             </Col>
-            <Col xs={12} sm={6} md={6} lg={6}>
-              <ProjectCard name="Dauble" type="Web App" image={proDauble} />
-            </Col>
-            <Col xs={12} sm={6} md={6} lg={6}>
-              <ProjectCard name="Medzin" type="Web App" image={proMedzin} />
+            <Col xs={12} sm={12} md={12} lg={12}>
+              <ProjectCard
+                name="Youtube Clone"
+                type="Web App"
+                image={youtube}
+                onClick={click3}
+              />
             </Col>
           </Row>
         </div>

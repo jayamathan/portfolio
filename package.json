@@ -1,17 +1,17 @@
 {
-  "name": "imabhi",
-  "version": "2.0.0",
+  "name": "jayamathan",
+  "version": "1.0.0",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/abhisharkjangir/imabhi"
+    "url": "https://github.com/jayamathan/portfolio"
   },
   "author": {
-    "name": "Abhishar Jangir",
-    "email": "abhisharjangir@ymail.com",
-    "url": "https://abhijangir.me"
+    "name": "Jayamathan S",
+    "email": "jayamathanskj03@gmail.com",
+    "url": "https://jayamathan.netlify.com"
   },
-  "homepage": "https://abhijangir.me",
+  "homepage": "https://jayamathan.netlify.com",
   "dependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.3.4",

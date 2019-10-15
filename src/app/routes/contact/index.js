@@ -5,7 +5,7 @@ import "./contact.scss";
 import { Container, Row, Col } from "../../components/layout";
 import Heading, { PageHeading } from "../../components/heading";
 import ContactForm from "../../components/contactForm";
-import { SOCIAL_LINKS } from "../../constants";
+//import { SOCIAL_LINKS } from "../../constants";
 import Meta from "../../constants/meta";
 
 const MapText = ({ text }) => <div className="map-text">{text}</div>;
@@ -39,8 +39,8 @@ function createMapOptions(maps) {
 }
 
 const pos = {
-  lat: 28.417051,
-  lng: 77.057853
+  lat: 12.7369,
+  lng: 80.0144
 };
 
 class GoogleMap extends React.PureComponent {
@@ -60,7 +60,7 @@ class GoogleMap extends React.PureComponent {
             defaultZoom={this.props.zoom}
             options={createMapOptions}
           >
-            <MapText {...pos} text={"ab."} />
+            <MapText {...pos} text={"JM."} />
           </GoogleMapReact>
         </div>
       </React.Fragment>
@@ -73,13 +73,67 @@ const FollowMe = () => {
     <div className="follow-me">
       <Heading text="Follow Me" className="text-center" />
       <ul>
-        {SOCIAL_LINKS.map(sl => (
-          <li key={sl.name}>
-            <a href={sl.link} rel="noopener noreferrer" target="_blank">
-              <img src={sl.img} alt={sl.name} />
-            </a>
-          </li>
-        ))}
+        <li>
+          <a
+            href="https://www.instagram.com/jayamathan_s/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn.svgporn.com/logos/instagram-icon.svg"
+              alt="instagram"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/jayamathan.skj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn.svgporn.com/logos/facebook.svg"
+              alt="facebook"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jayamathan-s/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn.svgporn.com/logos/linkedin.svg"
+              alt="linkedin"
+            />
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://github.com/jayamathan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn.svgporn.com/logos/github-icon.svg"
+              alt="github"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/JayamathanSkj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn.svgporn.com/logos/twitter.svg"
+              alt="twitter"
+            />
+          </a>
+        </li>
       </ul>
     </div>
   );
@@ -90,11 +144,11 @@ const Address = () => {
     <div className="address">
       <Heading text=" Always happy to hear from you" className="text-center" />
       <span>Address</span>
-      <p>G Block, South City II, Sector 50, Gurugram, India - 122018</p>
+      <p>C3 203 Aqualily Apartments, Mahindra world city, Chennai - 603002</p>
 
       <span>Email</span>
       <p>
-        <a href="mailto:abhisharjangir@ymail.com">abhisharjangir@ymail.com</a>
+        <a href="mailto:jayamathanskj03@gmail.com">jayamathanskj03@gmail.com</a>
       </p>
     </div>
   );

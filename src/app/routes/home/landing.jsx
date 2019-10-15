@@ -6,12 +6,11 @@ const ShortIntro = () => {
   return (
     <div className="intro" title="Introduction">
       <React.Fragment>
-        <p className="greeting">Hi! There,</p>
+        <p className="greeting">Hi! There, I am</p>
         <h1 className="name">
-          ABHISHAR <span>Jangir</span>
+          Jayamathan <span>S</span>
         </h1>
-        <h2 className="designation">Front End Developer</h2>
-        <h5 className="location">based in Gurugram, India.</h5>
+        <h2 className="designation">Full Stack Developer</h2>
       </React.Fragment>
       <React.Fragment>
         <LinkButton to="/about" label="Know More &#8594;" />
@@ -49,10 +48,10 @@ const Landing = () => {
           </Col>
           <Col xs={12} lg={6} md={6} sm={12} className="float-right">
             <Quote
-              heading="Creativity. Thinking. Knowledge.  You Great."
-              quote="Creativity leads to Thinking, Thinking provides Knowledge,
-              Knowledge Makes You Great!”"
-              writer="- Dr. APJ Abdul Kalam"
+              heading="'Eat'  <code>  /*sleep*/  Repeat()"
+              quote="Every great developer you know got there by solving
+              problems they were unqualified to solve until they actually did it!”"
+              writer="- Patrick McKenzie"
             />
           </Col>
         </Row>

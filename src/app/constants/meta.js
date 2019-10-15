@@ -1,16 +1,15 @@
-import { LOGO } from "../assets/imgs";
+import logo from "../assets/imgs/logo.png";
 
 export default {
   default: {
-    title: "Abhishar Jangir",
-    description:
-      "JavaScript/Front-End/ReactJS Developer based in Gurugram India.",
-    image: LOGO,
-    twitter: "@abhishar_jangir",
+    title: "Jayamathan Shanmugam",
+    description: "Full stack/JavaScript/Front-End/ReactJS Developer.",
+    image: { logo },
+    twitter: "@JayamathanSkj",
     sep: " - ",
-    siteURL: "https://abhijangir.me",
+    siteURL: "https://jayamathan.netlify.com",
     keywords:
-      "Abhishar, Abhishar Jangir, www.imabhi.in, imabhi,imabhi.in, Web developer, Front End Developer,front end developer, reactjs developer, javascript developer, Freelance web developer, HTML to PSD Developer, Responsive web developer, react js developer, react developer, react native developer, js developer, Javascript Developer",
+      "jayamathan, Web developer, full stack developer, Full Stack Developer,Front End Developer,front end developer, reactjs developer, javascript developer, Freelance web developer, HTML to PSD Developer, Responsive web developer, react js developer, react developer, react native developer, js developer, Javascript Developer",
     facebookAppId: "XXXXXXXXX",
     updated: new Date().toDateString(),
     published: new Date().toDateString(),
@@ -24,7 +23,7 @@ export default {
   about: {
     id: "about",
     title: "About",
-    description: "Read More about Abhishar Jangir"
+    description: "Read More about Jayamathan S"
   },
   contact: {
     id: "contact",
@@ -34,6 +33,6 @@ export default {
   notfound: {
     id: "notfound",
     title: "Oops! 404",
-    description: "This is not the web page you are lokking for."
+    description: "This is not the web page you are looking for."
   }
 };

@@ -1,11 +1,15 @@
 import React from "react";
 import "./projectCard.scss";
-const ProjectCard = ({ image, name, type, className }) => {
+const ProjectCard = ({ image, name, type, className, onClick }) => {
   return (
     <div className={`project-card ${className ? className : ""}`}>
-      <img src={image} alt="" />
-      <h3 className="name">{name}</h3>
-      <p className="type">{type}</p>
+      <img src={image} alt="" onClick={onClick} />
+      <h3 className="name" onClick={onClick}>
+        {name}{" "}
+      </h3>
+      <p className="type" onClick={onClick}>
+        {type}
+      </p>
     </div>
   );
 };

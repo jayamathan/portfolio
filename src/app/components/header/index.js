@@ -4,7 +4,9 @@ import "./header.scss";
 import { HEADER_LINKS } from "../../constants";
 import { Row, ContainerFluid } from "../layout";
 import Hamburger from "../hamburger";
-import { LOGO } from "../../assets/imgs";
+import logo from "../../assets/imgs/logo.png";
+import resume from "../../assets/JAYAMATHAN Resume.pdf";
+
 class Header extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -22,7 +24,7 @@ class Header extends React.PureComponent {
     return (
       <div className="logo col-6">
         <Link to="/">
-          <img src={LOGO} className="img-fluid" alt="wwww.imabhi.in" />
+          <img src={logo} className="img-fluid" alt="wwww.imabhi.in" />
         </Link>
       </div>
     );
@@ -34,23 +36,20 @@ class Header extends React.PureComponent {
       <div className="col-6 p-0">
         <div className="menu">
           <a
-            href="https://github.com/abhisharkjangir"
+            href="https://github.com/jayamathan"
             rel="noopener noreferrer"
             target="_blank"
           >
             Github
           </a>
           <a
-            href="https://in.linkedin.com/in/abhishar-jangir"
+            href="https://www.linkedin.com/in/jayamathan-s/"
             rel="noopener noreferrer"
             target="_blank"
           >
             LinkedIn
           </a>
-          <a
-            href={"https://s3.ap-south-1.amazonaws.com/imabhi.in/resume.pdf"}
-            download
-          >
+          <a href={resume} download>
             CV
           </a>
           <Hamburger isOpen={isOpen} toggle={this.toggle} />

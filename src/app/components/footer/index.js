@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./footer.scss";
 import { ContainerFluid } from "../layout";
-import { LOGO } from "../../assets/imgs";
+import logo from "../../assets/imgs/logo.png";
 
 class Footer extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ class Footer extends Component {
     return (
       <div className="footer">
         <ContainerFluid>
-          &copy; <img src={LOGO} height={25} alt="logo-ab" />{" "}
+          &copy; <img src={logo} height={25} alt="logo-ab" />{" "}
           {date.getFullYear()}
           <span className="float-none" />
           <span className="float-right">
