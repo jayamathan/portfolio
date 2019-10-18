@@ -9,7 +9,7 @@ import WorkTogether from "../../components/workTogether";
 import Skills from "../../components/skills";
 import Timeline from "../../components/timeline";
 //import WorkedWith from "../../components/workedWith";
-import jayamathan from "../../assets/imgs/jayamathan.JPG";
+import jayamathan from "../../assets/imgs/jayamathan_s.png";
 import Meta from "../../constants/meta";
 
 const About = () => (

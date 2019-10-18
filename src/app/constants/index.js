@@ -137,7 +137,7 @@ export const EXPERIENCE = [
     time: "Nov'18 - Present",
     title: "Infosys Limited",
     descriptiion:
-      "Reduced Project expenses by 50% decreasig Google Map API calls",
+      "Reduced project expenses by optimizing Google Maps API calls",
     designation: "Senior System Engineer"
   },
   {
@@ -145,7 +145,7 @@ export const EXPERIENCE = [
     time: "Jun'17 - Nov'18",
     title: "Infosys Limited",
     descriptiion:
-      "Increased Project revenue by 20% via new representatives  sign in. \n Rewarded for High Performer in Infosys Mysore Training ",
+      "Worked on European E-commerce Project named AVON and involved in various aspects including revamping of the website look, increasing the user accessibility and supported over 9 markets. Coordinated a POC and increased project sales by 20%. \n Rewarded for High Performer in Infosys Mysore Training.",
     designation: "System Engineer"
   },
   {

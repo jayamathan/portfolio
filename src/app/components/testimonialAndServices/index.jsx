@@ -37,11 +37,11 @@ const Testimonial = () => {
           <div className="col-md-6">
             <p>
               Jayamathan has wonderful implementation skills in terms of front
-              end engineering , he has played a vital role in developing UI and
-              UX for Medzin.
+              end, he learns everything quickly and great in exploring new
+              skills.
             </p>
             <span>
-              - MADHAV SHANKAR <i> Product Manager at Medzin</i>
+              - Chitra Gurumoorthy <i> Technology Analyst at Infosys</i>
             </span>
           </div>
         </Row>
@@ -73,8 +73,8 @@ const Services = () => {
             <ServiceCard
               className=""
               image={resdesign}
-              name="RESPONSIVE DESIGN"
-              desc="I can design and develop a fully responsive website for different size devices (i.e Desktop, Tablet, Mobile)."
+              name="Full stack development"
+              desc="I can handle both front end and back end development. I also comfortable in working with databases and github version control."
             />
           </Col>
           <Col xs={12} sm={6} md={6} lg={6} className="p-0">
@@ -82,7 +82,7 @@ const Services = () => {
               className=""
               image={doccode}
               name="DOCUMENTED CODE"
-              desc="I believe that code should be wrriten in a such manner that another developer can easily understand it."
+              desc="I believe that code should be written in such a manner that another developer can easily understand it."
             />
           </Col>
         </Row>
@@ -91,16 +91,16 @@ const Services = () => {
             <ServiceCard
               className="border-left-0 border-bottom-0"
               image={thirdparty}
-              name="THIRD PARTY INTEGRATION"
-              desc="I have experience of integrating third party tools or libraries such as Branch, Adobe Creative SDK etc."
+              name="Responsibility"
+              desc="I take ownership for my code and I can write pure functions in functional programming style.I test my code with testing tools before deploying."
             />
           </Col>
           <Col xs={12} sm={6} md={6} lg={6} className="p-0">
             <ServiceCard
               className="border-right-0 border-bottom-0"
               image={UIFrame}
-              name="UI FRAMEWORKS"
-              desc="I am familiar in using several frameworks like Bootstrap, Angular Material, Materialize CSS, Material UI etc."
+              name="Continuous Learning"
+              desc="I constantly update my skills with current trends in technologies.I develop side projects and write articles to keep me updated.   "
             />
           </Col>
         </Row>

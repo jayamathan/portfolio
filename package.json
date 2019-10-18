@@ -47,7 +47,8 @@
     "redux": "^4.0.0",
     "redux-immutable": "3.0.8",
     "redux-thunk": "^2.3.0",
-    "reselect": "^2.5.4"
+    "reselect": "^2.5.4",
+    "styled-components": "^4.4.0"
   },
   "scripts": {
     "start-app": "react-scripts start",

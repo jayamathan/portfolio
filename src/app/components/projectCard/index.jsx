@@ -1,5 +1,6 @@
 import React from "react";
 import "./projectCard.scss";
+
 const ProjectCard = ({ image, name, type, className, onClick }) => {
   return (
     <div className={`project-card ${className ? className : ""}`}>

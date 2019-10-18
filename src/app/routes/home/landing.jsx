@@ -11,6 +11,7 @@ const ShortIntro = () => {
           Jayamathan <span>S</span>
         </h1>
         <h2 className="designation">Full Stack Developer</h2>
+        <h5 className="location">based in Chennai, India.</h5>
       </React.Fragment>
       <React.Fragment>
         <LinkButton to="/about" label="Know More &#8594;" />

@@ -6,6 +6,8 @@ import monstersilk from "../../assets/imgs/monstersilk.png";
 import Heading from "../../components/heading";
 import ProjectCard from "../../components/projectCard";
 import Button from "../../components/button";
+import styled from "styled-components";
+
 const Projects = () => {
   const click1 = () => {
     window.open("http://crwn-store.herokuapp.com/", "_blank");
@@ -19,6 +21,13 @@ const Projects = () => {
   const click4 = () => {
     window.open("https://github.com/jayamathan/V2-crwn-clothing", "_blank");
   };
+  const click5 = () => {
+    window.open("https://github.com/jayamathan/Digital-Agency", "_blank");
+  };
+  const click6 = () => {
+    window.open("https://github.com/jayamathan/Youtube_Clone", "_blank");
+  };
+
   return (
     <section className="projects">
       <Container>
@@ -39,6 +48,9 @@ const Projects = () => {
                 image={crown}
                 onClick={click1}
               />
+              <Buttonstyle>
+                <Button label="View Github &#8594;" onClick={click4} />
+              </Buttonstyle>
             </Col>
             <Col xs={12} sm={12} md={12} lg={12}>
               <ProjectCard
@@ -47,6 +59,9 @@ const Projects = () => {
                 image={monstersilk}
                 onClick={click2}
               />
+              <Buttonstyle>
+                <Button label="View Github &#8594;" onClick={click5} />
+              </Buttonstyle>
             </Col>
             <Col xs={12} sm={12} md={12} lg={12}>
               <ProjectCard
@@ -55,6 +70,9 @@ const Projects = () => {
                 image={youtube}
                 onClick={click3}
               />
+              <Buttonstyle>
+                <Button label="View Github &#8594;" onClick={click6} />
+              </Buttonstyle>
             </Col>
           </Row>
         </div>
@@ -69,5 +87,12 @@ const Projects = () => {
     </section>
   );
 };
+
+const Buttonstyle = styled.div`
+  position: relative;
+  margin: 15px 0;
+  width: 100%;
+  text-align: center;
+`;
 
 export default Projects;
