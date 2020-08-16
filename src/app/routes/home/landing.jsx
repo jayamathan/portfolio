@@ -10,7 +10,7 @@ const ShortIntro = () => {
         <h1 className="name">
           Jayamathan <span>S</span>
         </h1>
-        <h2 className="designation">Full Stack Developer</h2>
+        <h2 className="designation">Product Management Enthusiast</h2>
         <h5 className="location">based in Chennai, India.</h5>
       </React.Fragment>
       <React.Fragment>
@@ -49,10 +49,9 @@ const Landing = () => {
           </Col>
           <Col xs={12} lg={6} md={6} sm={12} className="float-right">
             <Quote
-              heading="'Eat'  <code>  /*sleep*/  Repeat()"
-              quote="Every great developer you know got there by solving
-              problems they were unqualified to solve until they actually did it!”"
-              writer="- Patrick McKenzie"
+              heading="Ideate💡  <Build💻>  /*Launch🚀*/  Learn(📖)"
+              quote="Be stubborn on vision but flexible on details!”"
+              writer="- Jeff Bezos Amazon"
             />
           </Col>
         </Row>
