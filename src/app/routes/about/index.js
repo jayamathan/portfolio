@@ -41,8 +41,8 @@ const About = () => (
               <p>
                 I started as an engineer experimenting with microprocessors, got
                 curious, and grew into more holistic roles like Full-stack
-                development 👨🏻‍💻 and Product Management. Curiosity shaped my
-                journey all along🤔!
+                development and Product Management. Curiosity shaped my
+                journey all along!
               </p>
               <p>
                 I have 3+ years of industry experience and built meaningful,
